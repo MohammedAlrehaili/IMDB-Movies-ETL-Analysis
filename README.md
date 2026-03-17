@@ -1,26 +1,33 @@
-🎬 IMDB Top 1000 Movies: ETL & Cinematic Intelligence
-An end-to-end Data Engineering and Analytics project. This repository demonstrates a complete pipeline: cleaning raw movie data with Python, processing it in Google BigQuery, and visualizing multi-dimensional cinematic insights in Looker Studio.
+# 🎬 IMDB Top 1000 Movies: ETL & Cinematic Intelligence
 
-📊 Market Insights & Visualizations
+An end-to-end Data Engineering and Analytics project. This repository demonstrates a complete pipeline: cleaning raw movie data with **Python**, processing it in **Google BigQuery**, and visualizing multi-dimensional cinematic insights in **Looker Studio**.
+
+---
+
+## 📊 Market Insights & Visualizations
+
 The following analysis was performed to uncover trends in movie production, director performance, and the gap between audience and critics.
 
-1. Top 10 Directors by Movie Count(page1.png)
-Description: A Bar Chart identifying the most consistent directors in the top 1000 list.
+### 1. Top 10 Directors by Movie Count
+![Top Directors Analysis](page1.png)
+* **Description:** A Bar Chart identifying the most consistent directors in the top 1000 list.
+* **Insight:** Highlights legends like **Akira Kurosawa** and **Martin Scorsese**, showcasing their long-term dominance and impact on cinema history.
 
-Insight: Highlights legends like Akira Kurosawa and Martin Scorsese, showcasing their long-term dominance and impact on cinema history.
+### 2. Audience (IMDb) vs. Critics (Metascore) Gap
+![Rating Gap Analysis](page2.png)
+* **Description:** A Grouped Bar Chart comparing **Audience Ratings** against **Normalized Meta Scores** (scaled to 10).
+* **Insight:** Reveals the "Rating Gap"; identifying movies that were "Audience Favorites" (like *I Am Sam*) despite being panned by professional critics.
 
-2. Audience (IMDb) vs. Critics (Metascore) Gap
-Description: A Grouped Bar Chart comparing Audience Ratings against Normalized Meta Scores (scaled to 10).
+### 3. Cinema Growth & Production Trends by Decade
+![Decade Analysis Chart](page3.png)
+* **Description:** An Area Chart showing the distribution of top-rated movies across different decades (**1920s - 2020s**).
+* **Insight:** Visualizes the "Golden Age" of cinema and the exponential growth in high-quality productions during the **1990s** and **2000s**.
 
-Insight: Reveals the "Rating Gap"; identifying movies that were "Audience Favorites" (like I Am Sam) despite being panned by professional critics.
+---
 
-3. Cinema Growth & Production Trends by Decade
-Description: An Area Chart showing the distribution of top-rated movies across different decades (1920s - 2020s).
+## 📂 Project Structure
 
-Insight: Visualizes the "Golden Age" of cinema and the exponential growth in high-quality productions during the 1990s and 2000s.
-
-📂 Project Structure
-Plaintext
+```text
 ├── data/
 │   ├── imdb_top_1000.csv       # Raw dataset (Input)
 │   └── Cleandimdb_top_1000.csv # Cleaned dataset (Output)
@@ -34,6 +41,8 @@ Plaintext
 ├── page2.png                   # Chart: Rating Gap
 ├── page3.png                   # Chart: Decade Analysis
 └── README.md                   # Project documentation
+```
+
 🛠️ Technical Stack
 Language: Python 3.x (Pandas for ETL)
 
@@ -44,7 +53,8 @@ Visualization: Looker Studio
 Environment: VS Code
 
 ⚙️ How to Reproduce
-Clone the Repo: git clone https://github.com/MohammedAlrehaili/IMDB-Movies-ETL-Analysis.git
+Clone the Repo: ```bash
+git clone https://github.com/MohammedAlrehaili/IMDB-Movies-ETL-Analysis.git
 
 Run ETL: Execute python scripts/clean_data.py to generate the cleaned dataset.
 
